@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paiint</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="toolbar">
+        <button class="color-button" data-color="#000000" style="background-color: #000000;"></button>
+        <button class="color-button" data-color="#ff0000" style="background-color: #ff0000;"></button>
+        <button class="color-button" data-color="#ffff00" style="background-color: #ffff00;"></button>
+        <button class="color-button" data-color="#00ff00" style="background-color: #00ff00;"></button>
+        <button class="color-button" data-color="#00ffff" style="background-color: #00ffff;"></button>
+        <button class="color-button" data-color="#0000ff" style="background-color: #0000ff;"></button>
+        <button class="color-button" data-color="#ff00ff" style="background-color: #ff00ff;"></button>
+        <div class="spacer"></div>
+        <button class="size-button" data-size="1">S</button>
+        <button class="size-button active" data-size="2">M</button>
+        <button class="size-button" data-size="4">L</button>
+        <div class="spacer"></div>
+        <button class="tool-button active" data-tool="pencil">✏️</button>
+        <button class="tool-button" data-tool="eraser">E</button>
+        <button class="tool-button" data-tool="bucket">🪣</button>
+        <div class="spacer"></div>
+        <button id="clear">❌</button>
+        <button id="undo">↩️</button>
+        <button id="redo">↪️</button>
+        <button id="export">⬇️</button>
+    </div>
+    <canvas id="paint" width="256" height="192"></canvas>
+
+    <input type="checkbox" id="dark-mode-toggle" style="position: absolute; top: 10px; right: 10px;">
+    <label for="dark-mode-toggle" style="position: absolute; top: 10px; right: 40px; cursor: pointer;">🌙</label>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+canvas {
+  background-color: white;
+  height: 100%;
+  width: auto;
+  max-height: 768px;
+  margin: 0rem 1rem 1rem 1rem;
+  image-rendering: pixelated;
+  border: 1px solid #333;
+  cursor: crosshair;
+  aspect-ratio: 4 / 3;
+  &.dark-mode-canvas {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+
+#toolbar {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#toolbar button {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#toolbar button.active {
+  background-color: lightgray;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  #toolbar button {
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+  }
+
+  #toolbar button.active {
+    background-color: gray;
+  }
+}
+
+#toolbar button.color-button {
+  border: none;
+  cursor: pointer;
+}
+
+.spacer {
+  background-color: #333;
+  width: 1px;
+  height: 24px;
+}
