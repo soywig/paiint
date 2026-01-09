@@ -2,4 +2,4 @@
 
 a flipnote studio-esque paint clone i made because i was bored.
 
-[soyfaii.github.io/paiint](https://soyfaii.github.io/paiint)
+[soywig.github.io/paiint](https://soywig.github.io/paiint)
